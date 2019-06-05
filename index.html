@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>Текстовый редактор</title>
+	<!-- Подключение стилей элементов -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Подключение JS библиотеки -->
+	<script src="jquery-3.3.1.min.js"></script>
+	<!-- Подключение основного скрипта и логики страницы -->
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<!-- Внешний контейнер -->
+     <div class = 'contaner'>
+     	<!-- Скрытый элемент с историей изменений текста -->
+     	<div class = "changeStack"><h1>Выберете текст из истории</h1>
+             <div class = "changeItem">Стандартный</div>         
+     	</div>
+     	<!-- Вложенный изначальный текст, который отобразится на странице -->
+     	<div class = 'content' contenteditable="false">
+     		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit faucibus rutrum. Praesent metus turpis, vulputate eu malesuada non, dignissim at mi. Quisque eu tempor purus, at sagittis ante. Phasellus ornare lacinia massa, sed sodales dui iaculis in. Nam nec massa justo. Etiam a erat eu justo condimentum cursus. Ut nisl sem, pretium et nisl nec, tempor mollis tellus. Fusce non neque tortor. Duis vehicula at augue placerat varius. Aliquam nisl nulla, tincidunt et elementum at, dapibus quis mi. In cursus sit amet enim non elementum. Quisque feugiat et enim nec convallis. Cras maximus vulputate turpis, nec lacinia turpis sollicitudin nec. Duis et elementum ante. Nulla sodales odio magna, eget pretium arcu rhoncus at. Aliquam placerat metus metus, at porttitor felis tempor quis.
+     	</div>
+     	<!-- Блок с кнопками -->
+     	<div class = 'buttons'>
+     		<button class = 'RedBut'>Редактировать</button>
+     		<button class = 'SaveBut' disabled>Сохранить</button>
+     		<button class = 'CansBut' disabled>Отмена</button>
+     	</div>
+     </div>
+</body>
+</html>

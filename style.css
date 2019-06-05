@@ -1,0 +1,68 @@
+
+/*Задаю основной цвет страницы*/
+body{
+	width: 100%;
+	background-color: #202020;
+}
+
+/*Задаю стили для основного контейнера*/
+.contaner{
+	width: 75%;
+	margin: 60px auto 20px;
+	background-color: #333333;
+	border-radius: 20px 20px 0 0;
+}
+
+/*Стили текста*/
+.content{
+  display: inline-block;
+  text-align: center;
+  padding:20px;
+  color: #767676;
+  font-size: 24px;
+}
+
+/*Стили контейнера с кнопками*/
+.buttons{
+	width: 100%;
+   float: right;
+   display: flex;
+   justify-content: space-between;  
+}
+
+/*Стили кнопок*/
+button{
+	width: 100%;
+   padding:15px;
+   border:none;
+   font-size: 20px;
+   background-color: #333333;
+   font-weight: bold;
+}
+
+/*Изменение цвета кнопки при наведении мыши*/
+button:hover{
+	background-color: #767676;
+}
+
+/*Стили окна истории изменений и его элементов*/
+.changeStack{
+	display: none;
+	background-color: white;
+	position: absolute;
+	left: 20%;
+	top:100px;
+	z-index: 99999;
+	text-align: center;	
+	border-radius: 20px;
+}
+
+.changeItem{
+	margin: 10px 10px 10px;
+	font-size: 20px;
+
+}
+/*Изменение цвета строки при наведении*/
+.changeItem:hover{
+	background-color: #aaaaaa;
+}
